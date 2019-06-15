@@ -1,0 +1,16 @@
+---
+- name: Create group(s)
+  group:
+    name: '{{ item.group_name }}'
+  with_items: '{{ user_groups }}'
+  when: user_groups
+
+- name: Create user
+  user:
+    generate_ssh_key: '{{ item.generate_user_ssh_key | default(omit) }}'
+    ssh_key_file: '{{ item.ssh_key_file }} '
+    groups: '{{ item.groups | join(",") | default(omit) }}'
+    append: '{{ item.append_groups }} '
+    name: '{{ item.user_name }}'
+    shell: '{{ item.user_shell | default(omit) }}'
+  with_items: '{{ users }

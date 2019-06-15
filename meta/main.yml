@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  author: Surjit Bains
+  description: Role to configure yum repositories
+  license: BSD
+  min_ansible_version: 2.1
+  platforms:
+  - name: Centos
+    versions:
+    - 6
+    - 7
+  - name: EL
+    versions:
+    - 6
+    - 7
+  categories:
+  - system
+dependencies: []
