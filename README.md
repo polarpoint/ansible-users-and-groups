@@ -1,4 +1,4 @@
- pol-ansible-users-groups-role	 
+ ol-ansible-users-groups-role	 
  =========
 
  Ansible common role to maintain users and groups
@@ -55,4 +55,4 @@ users:
  Author Information
  ------------------
 
- Surjit Bains <surj@polarpoint.io> <sbains@sapient.com>
+ Surjit Bains <surj@polarpoint.io> 
