@@ -1,4 +1,4 @@
- ol-ansible-users-groups-role	 
+ansible-users-groups-role	 
  =========
 
  Ansible common role to maintain users and groups
